@@ -2,23 +2,31 @@ defmodule Floki.RawHTML do
   @moduledoc false
 
   @self_closing_tags [
-    "area",
-    "base",
-    "br",
-    "col",
-    "command",
-    "embed",
-    "hr",
-    "img",
-    "input",
-    "keygen",
-    "link",
-    "meta",
-    "param",
-    "source",
-    "track",
-    "wbr"
-  ]
+                       "area",
+                       "base",
+                       "br",
+                       "col",
+                       "command",
+                       "embed",
+                       "hr",
+                       "img",
+                       "input",
+                       "keygen",
+                       "link",
+                       "meta",
+                       "param",
+                       "source",
+                       "track",
+                       "wbr"
+                     ] ++
+                       [
+                         "page",
+                         "media"
+                       ]
+
+  # TODO: Above needs to be configurable via...
+  # `current_parser = Application.get_env(:floki, :self_closing_tags)`
+  # ...within a macro to modify `@self_closing_tags`
 
   @encoder &HtmlEntities.encode/1
 
