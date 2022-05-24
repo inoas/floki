@@ -20,11 +20,11 @@ defmodule Floki.RawHTML do
                        "wbr"
                      ] ++
                        [
+                         "shy",
+                         "lighter",
+                         "bolder",
                          "page",
-                         "download",
-                         "media",
-                         "wbr",
-                         "shy"
+                         "media"
                        ]
 
   # TODO: Above needs to be configurable via...
