@@ -20,6 +20,7 @@ defmodule Floki.RawHTML do
                        "wbr"
                      ] ++
                        [
+                         "space",
                          "shy",
                          "lighter",
                          "bolder",
