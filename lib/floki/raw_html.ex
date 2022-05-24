@@ -21,6 +21,7 @@ defmodule Floki.RawHTML do
                      ] ++
                        [
                          "page",
+                         "download",
                          "media"
                        ]
 
