@@ -25,7 +25,8 @@ defmodule Floki.RawHTML do
                          "lighter",
                          "bolder",
                          "page",
-                         "media"
+                         "media",
+                         "download"
                        ]
 
   # TODO: Above needs to be configurable via...
