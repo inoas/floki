@@ -26,7 +26,7 @@ defmodule Floki.RawHTML do
                          "bolder",
                          "page",
                          "media",
-                         "download"
+                         "download",
                          "article"
                        ]
 
