@@ -27,6 +27,7 @@ defmodule Floki.RawHTML do
                          "page",
                          "media",
                          "download"
+                         "article"
                        ]
 
   # TODO: Above needs to be configurable via...
